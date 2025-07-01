@@ -940,3 +940,27 @@ body.dark-mode .announcement-card.official-note strong {
         display: none;
     }
 }
+/* --- تصميم تذييل الصفحة (Footer) --- */
+footer {
+    background-color: var(--card-bg-light); /* لون خلفية الفوتر في الوضع الفاتح */
+    color: var(--text-color-light); /* لون النص في الوضع الفاتح */
+    text-align: center; /* توسيط النص أفقياً */
+    padding: 10px 0; /* مسافة داخلية: 10 بكسل من الأعلى والأسفل (لجعله أنحف)، 0 من اليمين واليسار */
+    margin-top: 40px; /* مسافة من أعلى الفوتر ليفصله عن المحتوى السابق */
+    border-top: 1px solid var(--border-color-light); /* خط علوي رفيع وفاصل */
+    width: 100%; /* لضمان أن الفوتر يمتد على كامل عرض الصفحة */
+    box-sizing: border-box; /* لضمان أن البادينج لا يزيد العرض الكلي */
+}
+
+/* الوضع الليلي لتذييل الصفحة */
+.dark-mode footer {
+    background-color: var(--card-bg-dark); /* لون خلفية الفوتر في الوضع الليلي */
+    color: var(--text-color-dark); /* لون النص في الوضع الليلي */
+    border-color: var(--border-color-dark); /* لون الخط العلوي في الوضع الليلي */
+}
+
+/* تصميم النص داخل الفوتر */
+footer p {
+    font-size: 0.9rem; /* حجم خط أصغر قليلاً للنص */
+    margin: 0; /* إزالة أي هوامش افتراضية للفقرة */
+}
